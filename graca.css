@@ -1,4 +1,4 @@
-#work{
+#work {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -6,7 +6,7 @@
     width: 100%;
     padding: 6rem 10%;
 }
-.work-content{
+.work-content {
     padding: 1.5rem 1rem;
     display: flex;
     align-items: flex-start;
@@ -54,21 +54,23 @@
 #contact{
     display: flex;
     justify-content: space-evenly;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     background-color: rgb(19, 63, 99);
     color: rgb(236, 236, 236);
     padding: 2.5% 0;
 }
 
 .contact-info {
+    width: 16rem;
+    padding: 0 2rem;
     display: flex;
     flex-flow: column;
 }
 
-.contact-content {
+/* .contact-content {
     padding: 0.6rem 0;
-    /* width: max-content; */
-}
+    /* width: max-content; 
+} */
 
 .contact-content p {
     font-size: 0.9rem;
@@ -100,3 +102,28 @@
     }
     
 } */
+
+@media screen and (max-width: 480px){
+
+    #work {
+        padding: 6rem 2.5%;
+    }
+
+    .work-content i {
+        font-size: 1.5rem;
+    }
+    
+    .work-text{
+        padding-left: 0.5rem;
+    }
+
+    .work-text h3 {
+        font-size: 1.5rem;    
+    }
+
+    .work-text p {
+        line-height: 1.2em;
+        font-size: 1rem;
+    }
+   
+  }

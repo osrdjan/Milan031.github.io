@@ -1,6 +1,6 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box; 
 }
 
@@ -22,13 +22,22 @@ nav {
     height: 46px;
     z-index: 10;
 }
+
+.navbar {
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(236, 236, 236);    
+}
+
 /* Logo */
 .logo {
     display: flex;
     align-items: center;
-    font-size: 1.875em;
+    font-size: 1.875rem;
     font-family: Roboto, sans-serif;
-    padding: 0.1em 0;
+    padding: 0.1rem 0;
 }
 
 .logo-txt {
@@ -54,13 +63,6 @@ nav {
 }
 
 /* Navigacioni linkovi */
-.navbar {
-    padding: 0 4em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: rgb(236, 236, 236);    
-}
 
 .nav-links {
     display: flex;
@@ -74,8 +76,8 @@ nav {
 .nav-links a{
     color: rgb(236, 236, 236);
     text-decoration: none;
-    font-size: 1.2em;
-    padding: 0 0.5em;
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
 }
 
 /* .nav-links .active {
@@ -123,8 +125,7 @@ nav {
     align-items: center;
     background-color: #133f63;
     width: 100vw;    
-    height: 19em;
-    font-weight: 100;
+    height: 19rem;
 }
 
 #particles-js {
@@ -142,8 +143,8 @@ nav {
 
 .banner-txt h1 {
     font-weight: 300;
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 /* Baner kraj */
 
@@ -227,6 +228,19 @@ nav {
         background: #0c2940;
     }
   
+}
+
+/* Za mobilni !!! */
+@media screen and (max-width: 480px){
+
+    .navbar {
+        justify-content: flex-start;
+    }
+
+    .banner-txt h1 {
+        font-size: 2rem;
+    }
+
 }
 
 /* Klasa koja se poziva pri otvaranju hamburger menija*/

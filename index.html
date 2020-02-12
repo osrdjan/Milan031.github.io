@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="static/font-awersome/css/all.css">    
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap" rel="stylesheet">
-    <script  src="https://code.jquery.com/jquery-3.4.1.js"  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="  crossorigin="anonymous"></script>
+    <!-- <script  src="https://code.jquery.com/jquery-3.4.1.js"  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="  crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -123,7 +124,7 @@
       <div class="work-text">
         <h3>Data visualization</h3>
         <p> A picture is worth a thousand words – especially when you are trying to understand 
-            and discover insights from data. We use state-of-the-art visualization techniques 
+            and discover insights from data. We use "state of the art"  visualization techniques 
             to create meaningful, easy to understand, static, dynamic, and interactive plots of 
             your data. The purpose of data visualization is to assist reasoning about its content.
             It can be used as an interface between the domain expert and the data, as the technical
@@ -135,7 +136,7 @@
        <div class="work-text">
            <h3>Machine Learning and AI</h3>
            <p> A picture is worth a thousand words – especially when you are trying to understand 
-            and discover insights from data. We use state-of-the-art visualization techniques 
+            and discover insights from data. We use "state of the art" visualization techniques 
             to create meaningful, easy to understand, static, dynamic, and interactive plots of 
             your data. The purpose of data visualization is to assist reasoning about its content.
             It can be used as an interface between the domain expert and the data, as the technical
@@ -147,7 +148,7 @@
         <div class="work-text">
             <h3>Outlier detection</h3>
             <p> A picture is worth a thousand words – especially when you are trying to understand 
-                and discover insights from data. We use state-of-the-art visualization techniques 
+                and discover insights from data. We use "state of the art"  visualization techniques 
                 to create meaningful, easy to understand, static, dynamic, and interactive plots of 
                 your data. The purpose of data visualization is to assist reasoning about its content.
                 It can be used as an interface between the domain expert and the data, as the technical
@@ -159,7 +160,7 @@
        <div class="work-text">
            <h3>Recommender systems</h3>
            <p> A picture is worth a thousand words – especially when you are trying to understand 
-            and discover insights from data. We use state-of-the-art visualization techniques 
+            and discover insights from data. We use "state of the art"  visualization techniques 
             to create meaningful, easy to understand, static, dynamic, and interactive plots of 
             your data. The purpose of data visualization is to assist reasoning about its content.
             It can be used as an interface between the domain expert and the data, as the technical
@@ -171,76 +172,53 @@
 
 <!-- Contact -->
 <div id="contact">  
-    
-    <div class="contact-form-wrapper">
-        <form id="contact-form">
-            
-            <h3>Contact Us</h3>
-            
+  <div id="contact-form-wrapper">
+    <div class="form-wrapper">  
+        <form id="contact-form" action="email-from-user.php" method="POST">         
+            <h3>Contact Us</h3>          
             <div class="form-control">
-                <input type="text" class="form-input" name="name" autocomplete="off" placeholder=" " required>
+                <span id="alert-name" class="alert-wrapper">
+                    <i class="fal fa-exclamation-triangle alert"><span class="alert-text">This field is required!</span></i>
+                </span>
+                <input type="text" id="form-name" class="form-input" name="name" autocomplete="off" placeholder=" " >                
                 <label for="name" class="form-label">
                     <span class="label-text">Your Name</span>
-                    <!-- <span class="border"></span> -->
-                </label>
+                </label>                
             </div>
             <div class="form-control">
-                <input type="email" class="form-input" name="email" autocomplete="off" placeholder=" " required>
+                <span id="alert-email" class="alert-wrapper">
+                    <i class="fal fa-exclamation-triangle alert"><span class="alert-text">Valid email is required : ex@abc.xyz</span></i>
+                </span>
+                <input type="text" id="form-email" class="form-input" name="email" autocomplete="off" placeholder=" " >
                 <label for="email" class="form-label">
                     <span class="label-text">Your Mail</span>
-                    <!-- <span class="border"></span> -->
-                </label>
+                </label>                
             </div>
             <div class="form-control">
-                <input type="text" class="form-input" name="subject" autocomplete="off" placeholder=" " required>
+                <span id="alert-subject" class="alert-wrapper">
+                    <i class="fal fa-exclamation-triangle alert"><span class="alert-text">This field is required!</span></i>
+                </span>
+                <input type="text" id="form-subject" class="form-input" name="subject" autocomplete="off" placeholder=" " >
                 <label for="subject" class="form-label">
                     <span class="label-text">Subject</span>
-                    <!-- <span class="border"></span> -->
-                </label>
+                </label>                
             </div>
             <div id="textarea-control" class="form-control" >
-                <textarea id="form-textarea" class="form-input" name="message" autocomplete="off" placeholder=" " required></textarea>
+                <span id="alert-message" class="alert-wrapper">
+                    <i class="fal fa-exclamation-triangle alert"><span class="alert-text">This field is required!</span></i>
+                </span>
+                <textarea id="form-message" class="form-input" name="message" autocomplete="off" placeholder=" " ></textarea>
                 <label for="message" class="form-label">
                     <span id="textarea-label-text" class="label-text">Your Message</span>
-                    <!-- <span class="border"></span> -->
-                </label>
+                </label>                
             </div>
-
-            <button class="fade" type="submit" name="submit"> 
+            <button id="form-submit" type="submit" name="submit">
                 Submit <i class="fal fa-arrow-right"></i>
             </button>
         </form>
-
-        <!-- <script data-cfasync="false" type="text/javascript" src="contact-form.js"></script>
-
-        <div style="display:none;" id="thankyou_message">
-            <h3>Thanks for contacting us!
-                We will get back to you soon.</h3>
-        </div> -->
-
-
-        <script>
-            $( document ).ready(function() {
-                $('form').submit(function(e) {
-                    e.preventDefault(); // prevent page refresh
-            
-                    $.ajax({
-                        type: "POST",
-                        url: "email-from-user.php",
-                        data: $('form').serialize(), // serialize form data
-                        success: function(data) {
-                            window.location.replace("?succes=mailsent1");
-                        },
-                        error: function() {
-                            // Error ...
-                        }
-                    });
-                });
-            });
-            </script>
-
-
+        <p class="notification-message"></p>
     </div>
+  </div>
 
     <div class="contact-info">        
         <div class="contact-content">
@@ -255,8 +233,8 @@
 
 </div>
 
-
 <script src="main.js"></script>
+<script src="send-email.jq.js"></script>
 <script src="particles.min.js"></script>
 <script src="particles.js"></script>
 
