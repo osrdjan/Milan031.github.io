@@ -16,7 +16,7 @@
     cursor: context-menu;
 }
 
-.work-content i {
+.work-content i {    
     font-size: 2rem;
 }
 
@@ -115,7 +115,7 @@
     }
 
     .work-content i {
-        font-size: 1.5rem;
+        font-size: 1.715rem;
     }
     
     .work-text{
@@ -124,7 +124,7 @@
 
     .work-text h3 {
         font-size: 1.5rem;
-        line-height: 1.2rem;    
+        line-height: 1.5rem;    
     }
 
     .work-text p {
