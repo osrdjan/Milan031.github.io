@@ -384,4 +384,11 @@
     #textarea-control {
         margin-bottom: 4.25rem;
     }
+    .contact-info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 2rem 0rem 2rem;
+    }
 }
