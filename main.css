@@ -234,9 +234,7 @@ nav {
         transition: transform 1s ease-in-out;    */
     }
 
-    .custom-nav-links {
-        top: 46px;
-    }
+   
 
     .nav-links li {
         border-bottom: 1px solid #596773;
