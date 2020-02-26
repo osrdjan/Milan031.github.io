@@ -183,11 +183,12 @@
     <!-- Contact -->
     <div id="contact">
         <div id="contact-wrapper">
-            
+
             <div class="contact-info">
                 <div class="info-content">
                     <h3>Olympia.AI</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consectetur quis nisi sunt itaque animi praesentium? </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consectetur quis nisi sunt itaque
+                        animi praesentium? </p>
                 </div>
                 <div class="contact-content">
                     <h3>Contact</h3>
@@ -269,6 +270,20 @@
         const scroll = new SmoothScroll('a[href*="#"]', {
             speed: 750,
             speedAsDuration: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            $(window).scroll(function () {
+                let position = $(this).scrollTop();
+                if (position >= 275) {
+                    $('nav').addClass('custom-nav');
+                } else {
+                    $('nav').removeClass('custom-nav');
+                }
+            });
         });
     </script>
 

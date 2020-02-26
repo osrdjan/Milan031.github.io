@@ -19,8 +19,13 @@ nav {
     top: 0px;
     left: 0px;
     background-color: #133f63;
+    height: 4.5rem;
+    z-index: 10;    
+    transition: height 0.3s ease-in;
+}
+
+.custom-nav {
     height: 46px;
-    z-index: 10;
 }
 
 .navbar {
@@ -150,7 +155,7 @@ nav {
     align-items: center;
     background-color: #133f63;
     width: 100vw;    
-    height: 19rem;
+    height: 22rem;
 }
 
 #particles-js {
