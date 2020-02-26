@@ -22,10 +22,10 @@
     <nav class="navbar">
         <!-- Logo -->
         <div class="logo">
-            <a href="#" class="logo-img"><img src="logo.png" alt="logo"></a>
+            <a href="#" class="logo-img-link"><img src="logo.png" alt="logo" class="logo-img"></a>
             <a href="#" class="logo-txt">Olympia</a>
             <a href="#" class="logo-dot">.</a>
-            <a href="#" class="logo-txt">DataCore</a>
+            <a href="#" class="logo-txt">AI</a>
         </div>
         <!-- Navigacioni linkovi -->
         <ul class="nav-links">
@@ -278,10 +278,16 @@
 
             $(window).scroll(function () {
                 let position = $(this).scrollTop();
-                if (position >= 275) {
+                if (position >= 300) {
                     $('nav').addClass('custom-nav');
+                    $('.logo').addClass('custom-logo');
+                    $('.logo-img-link').addClass('custom-img-link');
+                    $('.logo-img').addClass('custom-img');
                 } else {
                     $('nav').removeClass('custom-nav');
+                    $('.logo').removeClass('custom-logo');
+                    $('.logo-img-link').removeClass('custom-img-link');
+                    $('.logo-img').removeClass('custom-img');
                 }
             });
         });

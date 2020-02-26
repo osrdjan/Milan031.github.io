@@ -40,9 +40,14 @@ nav {
 .logo {
     display: flex;
     align-items: center;
-    font-size: 1.875rem;
+    font-size: 2.2rem;
     font-family: Roboto, sans-serif;
     padding: 0.1rem 0;
+    transition: font-size 0.5s ease-in-out;
+}
+
+.custom-logo {
+    font-size: 1.875rem;
 }
 
 .logo-txt {
@@ -57,14 +62,21 @@ nav {
     padding-bottom: 2px;
 }
 
-.logo-img img{ 
-    width: 49px;
+.logo-img-link {
+    height: 48px;
+    padding-right: 3px;
+}   
+.custom-img-link {    
     height: 40px;
 }
 
-.logo .logo-img {
+.logo-img{ 
+    width: 60px;
+    height: 48px;
+}
+.custom-img {
+    width: 49px;
     height: 40px;
-    padding-right: 3px;
 }
 
 /* Navigacioni linkovi */
