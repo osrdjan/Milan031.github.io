@@ -21,7 +21,7 @@ nav {
     background-color: #133f63;
     height: 4.5rem;
     z-index: 10;    
-    transition: height 0.3s ease-in;
+    transition: height 0.5s ease-in;
 }
 
 .custom-nav {
@@ -43,7 +43,7 @@ nav {
     font-size: 2.2rem;
     font-family: Roboto, sans-serif;
     padding: 0.1rem 0;
-    transition: font-size 0.5s ease-in-out;
+    transition: font-size 0.5s ease-in;
 }
 
 .custom-logo {
@@ -292,10 +292,14 @@ nav {
 /* Klasa koja se poziva pri otvaranju hamburger menija*/
 .nav-active {
     max-height: 100vh;
-    transition: all 0.8s ease-in;
+    transition: all 0.5s ease-in;
     /* transform: translateY(0%);
     transition: transform 1s ease; */
 }
+
+/* .nav-active-transition {
+    transition: all 0.5s ease-in;
+} */
 
 /*Animacija koja se poziva pri otvaranju hamburger menija*/
 @keyframes navLinkFade{
