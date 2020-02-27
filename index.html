@@ -50,8 +50,8 @@
         <div id="particles-js"></div>
         <!-- Tekst  -->
         <div class="banner-txt">
-            <h1>Our Mission:</h1>
-            <h1>Turn your data into a business advantage</h1>
+            <h1 id="shuffle1">Our Mission:</h1>
+            <h1 id="shuffle2">Turn your data into a business advantage</h1>
         </div>
     </section>
     <!-- Baner kraj -->
@@ -260,8 +260,10 @@
 
     <script src="main.js"></script>
     <script src="send-email.jq.js"></script>
+    <script src="shuffle.jq.js"></script>
     <script src="particles.min.js"></script>
     <script src="particles.js"></script>
+
 
     <!-- Smooth scroll -->
     <script src="static/smooth-scroll-master/dist/smooth-scroll.polyfills.min.js"></script>
@@ -278,7 +280,7 @@
 
             $(window).scroll(function () {
                 let position = $(this).scrollTop();
-                if (position >= 300) {
+                if (position >= 250) {
                     $('nav').addClass('custom-nav');
                     $('.logo').addClass('custom-logo');
                     $('.logo-img-link').addClass('custom-img-link');
