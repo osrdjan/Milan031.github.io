@@ -38,6 +38,7 @@ nav {
 
 /* Logo */
 .logo {
+    position: relative;
     display: flex;
     align-items: center;
     font-size: 2.2rem;
@@ -188,6 +189,11 @@ nav {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
+
+#shuffle2 {
+    visibility: hidden;    
+}
+
 /* Baner kraj */
 
 /* Smanjenje belina navigacije*/

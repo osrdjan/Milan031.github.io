@@ -10,8 +10,8 @@
     $.fn.shuffleLetters = function (prop) {
 
         var options = $.extend({
-            "step": 8,			// How many times should the letters be changed
-            "fps": 25,			// Frames Per Second
+            "step": 10,			// How many times should the letters be changed
+            "fps": 30,			// Frames Per Second
             "text": "", 			// Use this text instead of the contents
             "callback": function () { }	// Run once the animation is complete
         }, prop)
@@ -58,11 +58,11 @@
                     types[i] = "lowerLetter";
                 }
                 else if (/[A-Z]/.test(ch)) {
-                    types[i] = "upperLetter";
+                     types[i] = "upperLetter";
                 }
-                else {
-                    types[i] = "symbol";
-                }
+                // else {
+                //     types[i] = "symbol";
+                // }
 
                 letters.push(i);
             }
@@ -111,7 +111,7 @@
 
                     shuffle(start + 1);
 
-                }, 1200 / options.fps);
+                }, 1000 / options.fps);
 
             })(-options.step);
 
@@ -123,13 +123,14 @@
         var pool = "";
 
         if (type == "lowerLetter") {
-            pool = "abcdefghijklmnopqrstuvwxyz0123456789";
+            pool = "abcdefghijklmnopqrstuvwxyz";
         }
         else if (type == "upperLetter") {
-            pool = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            pool = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         }
         else if (type == "symbol") {
-            pool = ",.?/\\(^)![]{}*&^%$#'\"";
+            // pool = ",.?/\\(^)![]{}*&^%$#'\"";
+            pool = "";
         }
 
         var arr = pool.split('');
@@ -145,13 +146,21 @@ $(function () {
     // container is the DOM element;
 
      var container1 = $("#shuffle1");
-     var container2 = $("#shuffle2");
+    //var container2 = $("#shuffle2");
     //var container2 = $(".banner-txt");
 
     // Shuffle the contents of container
     container1.shuffleLetters();
-    container2.shuffleLetters();
+    //container2.shuffleLetters();
     //container2.shuffleLetters();
     
 
 });
+
+setTimeout(function(){
+
+    var container2 = $("#shuffle2");
+    container2.css("visibility", "visible");
+    container2.shuffleLetters();
+
+},900);
