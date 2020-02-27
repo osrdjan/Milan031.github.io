@@ -35,11 +35,11 @@
         </div>
         <!-- Navigacioni linkovi -->
         <ul class="nav-links">
-            <li><a href="#" class="custom-underline active">Home</a></li>
-            <li><a href="#about" class="custom-underline active">About Us</a></li>
-            <li><a href="#work" class="custom-underline active">Our Work</a></li>
-            <li><a href="#" class="custom-underline active">Sample Projects</a></li>
-            <li><a href="#contact" class="custom-underline active">Contact</a></li>
+            <li><i class="fal fa-home-alt proba"></i><a href="#" class="custom-underline active">Home</a></li>
+            <li><i class="fal fa-info-square proba"></i><a href="#about" class="custom-underline active">About Us</a></li>
+            <li><i class="fal fa-briefcase proba"></i><a href="#work" class="custom-underline active">Our Work</a></li>
+            <li><i class="fal fa-project-diagram proba"></i><a href="#" class="custom-underline active">Sample Projects</a></li>
+            <li><i class="fal fa-comment-dots proba"></i><a href="#contact" class="custom-underline active">Contact</a></li>
         </ul>
         <!-- Hamburger meni -->
         <div class="burger">
@@ -191,7 +191,8 @@
         <div id="contact-wrapper">
 
             <div class="contact-info">
-                <div class="info-content">
+                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCy9r70T3NYf3PhvVflTo0_zdif2_IoIYs&amp;q=place_id:ChIJlTpC7E_TWUcRBrVW8MPUeSc" allowfullscreen=""></iframe></div>
+                <!-- <div class="info-content">
                     <h3>Olympia.AI</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consectetur quis nisi sunt itaque
                         animi praesentium? </p>
@@ -203,7 +204,7 @@
                         Tel:&nbsp; +381 (0)31 522 524<br>
                         <a href="mailto:olympia@gmail.com">olympia@gmail.com</a>
                     </p>
-                </div>
+                </div> -->
             </div>
 
             <div id="contact-form-wrapper">
@@ -286,7 +287,7 @@
 
             $(window).scroll(function () {
                 let position = $(this).scrollTop();
-                if (position >= 250) {
+                if (position >= 600) {
                     $('nav').addClass('custom-nav');
                     $('.logo').addClass('custom-logo');
                     $('.logo-img-link').addClass('custom-img-link');
