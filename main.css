@@ -24,8 +24,19 @@ nav {
     transition: height 0.4s ease-in-out;
 }
 
+.nav-background {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    transition:  background-color 0.6s ease-in-out;
+}
+
 .custom-nav {
     height: 46px;
+    background-color: #133f63;
+}
+
+.navbar-active {
     background-color: #133f63;
 }
 
@@ -184,7 +195,7 @@ nav {
     height: 100vh;    
 }
 
-#banner-wrapper {
+#banner-background {
     position: absolute;            
     width: inherit;
     height: inherit;
@@ -242,13 +253,14 @@ nav {
     /* Izgled za mobilni */
 
     #banner {
-        height: 21em;
+        height: 100vh;
     }
 
     /* Promena navigacionih linkova */
+
     .nav-links {        
-        background-color: #0c2940;
         display: flex;
+        background-color: #0c2940;
         flex-direction: column;
         text-align: center;
         position: absolute;

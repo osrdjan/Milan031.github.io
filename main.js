@@ -3,11 +3,13 @@ const navSlide = () => {
     const nav = document.querySelector('.nav-links');
     const navLi = document.querySelectorAll('.nav-links li');
     const navLinks = document.querySelectorAll('.navbar a');
+    const navbar = document.querySelector('.nav-background');
 
     /* Dogadjaji pri kliku na hamburger meni */
     burger.addEventListener('click', () => {
         /* Otvaranje i zatvaranje*/
-        nav.classList.toggle('nav-active');
+        nav.classList.toggle('nav-active');        
+        navbar.classList.toggle('navbar-active');
         /* Restartovanje animacije i podesavanje duzine animacije pri otvaranju */
         navLi.forEach((link, index) => {
             if(link.style.animation) {

@@ -22,6 +22,7 @@
 
     <!-- Navigacija  -->
     <nav class="navbar">
+        <div class="nav-background"></div>
         <!-- Logo -->
         <div class="logo">
             <a href="#" class="logo-img-link"><img src="logo.png" alt="logo" class="logo-img"></a>
@@ -52,7 +53,7 @@
 
     <!-- Baner -->
     <section id="banner">
-        <div id="banner-wrapper"></div>
+        <div id="banner-background"></div>
         <!-- Animacija - https://vincentgarreau.com/particles.js/ -->
         <div id="particles-js"></div>
         <!-- Tekst  -->
@@ -290,7 +291,7 @@
 
             $(window).scroll(function () {
                 let position = $(this).scrollTop();
-                if (position >= 550) {
+                if (position >= 150) {
                     $('nav').addClass('custom-nav');
                     $('.logo').addClass('custom-logo');
                     $('.logo-img-link').addClass('custom-img-link');
