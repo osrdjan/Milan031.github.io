@@ -59,14 +59,14 @@
     animation: ball-scale 1s 0s ease-in-out infinite;
 }
 
-.la-ball-scale-multiple > div:nth-child(2) {
+.logo:hover .la-ball-scale-multiple > div:nth-child(2) {
     -webkit-animation-delay: .2s;
        -moz-animation-delay: .2s;
          -o-animation-delay: .2s;
             animation-delay: .2s;
 }
 
-.la-ball-scale-multiple > div:nth-child(3) {
+.logo:hover .la-ball-scale-multiple > div:nth-child(3) {
     -webkit-animation-delay: .4s;
        -moz-animation-delay: .4s;
          -o-animation-delay: .4s;
@@ -93,13 +93,18 @@
     height: 64px;
 }
 
-.la-ball-scale-multiple.la-3x {
+.la-3x {
     width: 30px;
     height: 30px;
     position: absolute;
     top: 19px;
     right: 26px;
     /* transform: translate(169%, -46%); */
+}
+
+.custom-la-3x {
+    top: 14px;
+    right: 20px;
 }
 
 .la-ball-scale-multiple.la-3x > div {
