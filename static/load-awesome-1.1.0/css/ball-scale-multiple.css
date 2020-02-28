@@ -48,49 +48,6 @@
             animation: ball-scale-multiple 1s 0s ease-in-out infinite; */
 }
 
-@media screen and (max-width: 820px){
-
-    .la-ball-scale-multiple > div {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 32px;
-        height: 32px;
-        border-radius: 100%;
-        opacity: 0;
-        -webkit-animation: ball-scale-multiple 1s 0s ease-in-out infinite;
-        -moz-animation: ball-scale-multiple 1s 0s ease-in-out infinite;
-        -o-animation: ball-scale-multiple 1s 0s ease-in-out infinite;
-        animation: ball-scale-multiple 1s 0s ease-in-out infinite;
-    }
-
-    .logo .la-ball-scale-multiple>div {
-        width: 32px;
-        height: 32px;
-        border-radius: 100%;
-        opacity: 0;
-        -webkit-animation: ball-scale 1s 0s ease-in-out infinite;
-        -moz-animation: ball-scale 1s 0s ease-in-out infinite;
-        -o-animation: ball-scale 1s 0s ease-in-out infinite;
-        animation: ball-scale 1s 0s ease-in-out infinite;
-    }
-    
-    .logo .la-ball-scale-multiple > div:nth-child(2) {
-        -webkit-animation-delay: .2s;
-           -moz-animation-delay: .2s;
-             -o-animation-delay: .2s;
-                animation-delay: .2s;
-    }
-    
-    .logo .la-ball-scale-multiple > div:nth-child(3) {
-        -webkit-animation-delay: .4s;
-           -moz-animation-delay: .4s;
-             -o-animation-delay: .4s;
-                animation-delay: .4s;
-    }
-
-}
-
 .logo:hover .la-ball-scale-multiple>div {
     width: 32px;
     height: 32px;
@@ -221,4 +178,61 @@
              -o-transform: scale(1);
                 transform: scale(1);
     }
+}
+
+@media screen and (max-width: 820px){
+
+    .la-ball-scale-multiple > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;
+        opacity: 0;
+        -webkit-animation: ball-scale-multiple 1s 0s ease-in-out infinite;
+        -moz-animation: ball-scale-multiple 1s 0s ease-in-out infinite;
+        -o-animation: ball-scale-multiple 1s 0s ease-in-out infinite;
+        animation: ball-scale-multiple 1s 0s ease-in-out infinite;
+    }
+
+    .logo .la-ball-scale-multiple>div {
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;
+        opacity: 0;
+        -webkit-animation: ball-scale 1s 0s ease-in-out infinite;
+        -moz-animation: ball-scale 1s 0s ease-in-out infinite;
+        -o-animation: ball-scale 1s 0s ease-in-out infinite;
+        animation: ball-scale 1s 0s ease-in-out infinite;
+    }
+    
+    .logo .la-ball-scale-multiple > div:nth-child(2) {
+        -webkit-animation-delay: .2s;
+           -moz-animation-delay: .2s;
+             -o-animation-delay: .2s;
+                animation-delay: .2s;
+    }
+    
+    .logo .la-ball-scale-multiple > div:nth-child(3) {
+        -webkit-animation-delay: .4s;
+           -moz-animation-delay: .4s;
+             -o-animation-delay: .4s;
+                animation-delay: .4s;
+    }
+
+    .la-3x {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 19px;
+        right: 26px;
+        /* transform: translate(169%, -46%); */
+    }
+
+    .custom-la-3x {
+        top: 14px;
+        right: 20px;
+    }
+
 }
