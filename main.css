@@ -36,6 +36,10 @@ nav {
     background-color: #133f63;
 }
 
+.custom-nav-transition {
+    transition: height 0s ease-in-out;
+}
+
 .navbar-active {
     background-color: #133f63;
 }
@@ -62,6 +66,9 @@ nav {
 .custom-logo {
     font-size: 1.875rem;
 }
+.custom-logo-transition{
+    transition: font-size 0s ease-in-out;
+}
 
 .logo-txt {
     text-decoration: none;
@@ -84,6 +91,10 @@ nav {
     height: 40px;
 }
 
+.custom-img-link-transition {
+    transition: height 0s ease-in-out;
+}
+
 .logo-img{ 
     width: 60px;
     height: 48px;
@@ -91,6 +102,10 @@ nav {
 .custom-img {
     width: 49px;
     height: 40px;
+}
+
+.custom-img-transition {
+    transition: all 0s ease-in-out;
 }
 
 /* Navigacioni linkovi */
@@ -277,6 +292,10 @@ nav {
 
     .custom-nav-links {
         top: 46px;
+    }
+
+    .custom-nav-links-transition {
+        transition: top 0s ease-in-out;
     }
 
     .nav-links li {
