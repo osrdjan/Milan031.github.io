@@ -1,33 +1,37 @@
 #contact {
-    margin-top: 2.5rem;    
+    width: 100%;
+    padding-top: 2.75rem;    
     display: flex;
     flex-direction: column;
+    background-color: transparent;
 }
 
 .contact-footer {
-    padding: 1rem;
+    padding: 1.5rem;
     display: flex;
-    flex-flow: column;
-    background-color: #404041;
+    background-color: #373738;
+    color: white;
 }
 
-.contact-content p {
-    font-size: 0.9rem;
-    line-height: 1.5em;
-    width: auto;
-}
-
-.contact-content h3 {
-    color: #69aee9;
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-}
-
-.info-content h3 {
+/* .info-content h3 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
     font-weight: 400;
+} */
+
+.contact-content h3 {
+    color: #69aee9;
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    padding: 1.5rem 0 2rem 0;
+}
+
+.contact-content p {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    width: auto;
 }
 
 .contact-content a {
@@ -392,14 +396,27 @@ iframe {
 } */
 
 @media screen and (max-width: 768px) {
-    #contact-wrapper {
-        padding: 2rem 0;
+    
+    #contact-header {
+        flex-direction: column-reverse;
+    }
+    .contact-map {
+        width: 100%;
+        height: 30rem;
     }
     #contact-form-wrapper {
-        padding: 0 2rem;
+        width: 100%;
     }
+
     .form-wrapper {
-        padding: 2rem 2rem 1.25rem 2rem;
+        padding: 5rem 2.5rem 2.5rem 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    .form-wrapper {
+        padding: 3rem 1.5rem 1.5rem 1.5rem;
     }
     #contact-form h3 {
         font-size: 1.75rem;
@@ -411,11 +428,13 @@ iframe {
     #textarea-control {
         margin-bottom: 4.25rem;
     }
-    .contact-info {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 3rem 2rem 0rem 2rem;
+    .contact-content h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+    .contact-content p {
+        font-size: 1.1rem;
+        line-height: 2rem;
     }
 }
