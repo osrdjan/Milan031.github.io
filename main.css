@@ -37,7 +37,7 @@ nav {
 }
 
 .custom-nav-transition {
-    transition: height 0s ease-in-out;
+    transition: height 0.1s ease-in-out;
 }
 
 .navbar-active {
@@ -67,7 +67,7 @@ nav {
     font-size: 1.875rem;
 }
 .custom-logo-transition{
-    transition: font-size 0s ease-in-out;
+    transition: font-size 0.1s ease-in-out;
 }
 
 .logo-txt {
@@ -92,7 +92,7 @@ nav {
 }
 
 .custom-img-link-transition {
-    transition: height 0s ease-in-out;
+    transition: height 0.1s ease-in-out;
 }
 
 .logo-img{ 
@@ -105,7 +105,7 @@ nav {
 }
 
 .custom-img-transition {
-    transition: all 0s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 /* Navigacioni linkovi */
@@ -295,7 +295,7 @@ nav {
     }
 
     .custom-nav-links-transition {
-        transition: top 0s ease-in-out;
+        transition: top 0.1s ease-in-out;
     }
 
     .nav-links li {
