@@ -107,6 +107,11 @@
     right: 20px;
 }
 
+.custom-la-3x-transition {
+    transition: all 0.1s ease-in-out;
+    /* transition: none; */
+}
+
 .la-ball-scale-multiple.la-3x > div {
     width: 30px;
     height: 30px;

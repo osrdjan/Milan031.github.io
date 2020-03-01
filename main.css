@@ -37,7 +37,8 @@ nav {
 }
 
 .custom-nav-transition {
-    transition: height 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    /* transition: none; */
 }
 
 .navbar-active {
@@ -67,7 +68,8 @@ nav {
     font-size: 1.875rem;
 }
 .custom-logo-transition{
-    transition: font-size 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    /* transition: none; */
 }
 
 .logo-txt {
@@ -92,7 +94,8 @@ nav {
 }
 
 .custom-img-link-transition {
-    transition: height 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    /* transition: none; */
 }
 
 .logo-img{ 
@@ -106,6 +109,7 @@ nav {
 
 .custom-img-transition {
     transition: all 0.1s ease-in-out;
+    /* transition: none; */
 }
 
 /* Navigacioni linkovi */
@@ -295,7 +299,8 @@ nav {
     }
 
     .custom-nav-links-transition {
-        transition: top 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+        /* transition: none; */
     }
 
     .nav-links li {
