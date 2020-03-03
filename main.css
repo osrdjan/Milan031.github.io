@@ -216,8 +216,9 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("AI.jpeg");
-    background-size: cover;
+    background-image: url("AI5.jpg");
+    background-size: contain;
+    background-position: center;
     z-index: 6;
     width: 100vw;
     height: 100vh;
