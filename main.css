@@ -12,6 +12,56 @@ body {
     overflow-x: hidden;
 }
 
+/* Preloader*/
+
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 160px;
+    height: 160px;
+  }
+  .lds-ripple div {
+    position: absolute;
+    border: 2px solid #fff;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: 80px;
+      left: 80px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 160px;
+      height: 160px;
+      opacity: 0;
+    }
+  }
+  
+
+.sk-center {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #133f63;
+    z-index: 9999;
+} 
+
 /* Navigacija */
 
 nav {
@@ -53,6 +103,28 @@ nav {
     align-items: center;
     color: rgb(236, 236, 236);
 }
+
+#to-top {
+    display: none;
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    z-index: 100;
+}
+
+#to-top i {
+    font-size: 3rem;
+    color: rgb(180, 180, 180);
+}
+
+/* #to-top a {
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    display: block;
+    width: 100%;
+    height: 100%;
+} */
 
 /* Logo */
 
@@ -216,8 +288,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("AI5.jpg");
-    background-size: contain;
+    background-image: url("AI1.jpg");
+    background-size: cover;
     background-position: center;
     z-index: 6;
     width: 100vw;
@@ -253,8 +325,49 @@ nav {
     margin-bottom: 0.5rem;
 }
 
+#shuffle1 {
+    visibility: hidden;
+}
+
 #shuffle2 {
     visibility: hidden;
+}
+
+#button-continue {
+    position: absolute;
+    bottom: 10%;
+    z-index: 10;
+    width: 9rem;
+    height: 3.5rem;
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 2rem;
+    opacity: 0.8;
+    transition: all 0.5s ease-out;
+    background-color: transparent;
+}
+
+#button-continue:hover {
+    opacity: 1;
+    background-color: rgba(105,174,233,0.1);
+    border-width: 2px;
+}
+
+#button-continue a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgb(236, 236, 236);
+}
+
+#button-continue:hover a {
+    font-weight: 400;
 }
 
 /* Baner kraj */
@@ -278,10 +391,12 @@ nav {
         padding: 0;
         justify-content: center;
     }
+
     /* Izgled za mobilni */
     #banner {
         height: 100vh;
     }
+
     /* Promena navigacionih linkova */
     .nav-links {
         display: flex;
@@ -299,30 +414,37 @@ nav {
         /* transform: translateY(-100%);
         transition: transform 1s ease-in-out;    */
     }
+
     .custom-nav-links {
         top: 46px;
     }
+
     .custom-nav-links-transition {
         transition: all 0.1s ease-in-out;
         /* transition: none; */
     }
+
     .nav-links li {
         border-bottom: 1px solid #596773;
         opacity: 0;
     }
+
     .nav-links li:hover .custom-underline::after {
         width: 0%;
     }
+
     .nav-links li:hover {
         background-color: #196eb4;
         transition: 0.75s;
         border-radius: 12px;
     }
+
     /* Promena širine navigacionih linkova*/
     .nav-links a {
         display: block;
         width: 100%;
     }
+
     /* Podešavanja hamburger menija*/
     .burger {
         display: block;
@@ -334,6 +456,7 @@ nav {
         width: 38px;
         cursor: pointer;
     }
+
     /* .burger:hover {
         background: #0c2940;
     } */
@@ -345,6 +468,7 @@ nav {
     .navbar {
         justify-content: flex-start;
     }
+
     .banner-txt h1 {
         font-size: 2rem;
     }
@@ -370,6 +494,7 @@ nav {
         opacity: 0;
         transform: translateY(50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0px);
